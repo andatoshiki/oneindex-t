@@ -29,7 +29,7 @@ if [ "$path" = "$downloadpath" ] && [ $2 -eq ]
     exit 0
 elif [ "$path"="$downloadpath" ]
     then
-        /www/server/php/74/bin/php /wwwroot/upload.toshiki.top/one.php upload:folder # upload type=folder for specifying folder uploads
+        /www/server/php/74/bin/php /www/wwwroot/upload.toshiki.top/one.php upload:folder # upload type=folder for specifying folder uploads
 "$filepath"/ /upload/"${filepath##*/}"/
     rm -rf "$filepath"/
     exit -

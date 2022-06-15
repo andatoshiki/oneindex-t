@@ -15,3 +15,5 @@ B-->E;
 C-->D;
 C-->E;
 ```
+
+PRs and suggestions are always welcomed via issue tab, discussion tab will be set in future since I in person is lacking of spare time due to finals and testings in school.

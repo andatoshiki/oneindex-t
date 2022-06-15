@@ -13,7 +13,7 @@
 #=================================================
 
 path=$3
-downloadpath="/usr/local/caddy/www/aria2/Download" # here's where your download path is set
+downloadpath='/usr/local/caddy/www/aria2/Download' # here's where your download path is set
 if [ $2 -eq 0 ]
     then
         exit 0
@@ -21,7 +21,7 @@ fi
 while true; do
 filepath=$path
 path=${path%/*};
-if [ "$path" = "$downloadpath" ] && [ $2 -eq ]
+if [ "$path" = "$downloadpath" ] && [ $2 -eq 1 ]
     then # here is where your php binary is located
         /www/server/php/74/bin/php /www/wwwroot/upload.toshiki.top/one.php upload:file # upload type=file for specifying file uploads
 "$filepath" /upload/ # choose your designated upload folder for OneDrive and make sure it exists (create the folder first)

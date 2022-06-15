@@ -23,7 +23,7 @@ filepath=$path
 path=${path%/*};
 if [ "$path" = "$downloadpath" ] && [ $2 -eq ]
     then # here is where your php binary is located
-        /www/server/php/74/bin/php /wwwroot/upload.toshiki.top/one.php upload:file # upload type=file for specifying file uploads
+        /www/server/php/74/bin/php /www/wwwroot/upload.toshiki.top/one.php upload:file # upload type=file for specifying file uploads
 "$filepath" /upload/ # choose your designated upload folder for OneDrive and make sure it exists (create the folder first)
     rm -rf "$filepath"
     exit 0
@@ -32,6 +32,6 @@ elif [ "$path"="$downloadpath" ]
         /www/server/php/74/bin/php /www/wwwroot/upload.toshiki.top/one.php upload:folder # upload type=folder for specifying folder uploads
 "$filepath"/ /upload/"${filepath##*/}"/
     rm -rf "$filepath"/
-    exit -
+    exit 0
 fi
 done

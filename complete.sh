@@ -1,1 +1,1 @@
-aria2c --conf-path=/root/.aria2/aria2.conf --on-download-complete=/www/wwwroot/upload.toshiki.top/up2drive.sh -D
+aria2c --conf-path=/root/.aria2/aria2.conf --on-download-complete=/root/up2drive.sh -D
